@@ -1,56 +1,6 @@
-[
-   {
-      "code":"s1",
-      "shortname":"scalability",
-      "name":"Scaling to the number of clients",
-      "comment":"some comment",
-      "problem":"Many of the processes required to support a Client are too costly – usually because of the manual labor costs – to support the current number of clients, let alone increasing it. For example, the Investor Sales unit has decided to stop doing business with low-revenue clients because the cost of maintaining those clients is greater than the generated revenue. Similarly, credit lines are cut and legal agreements cancelled",
-      "impact":"ICG’s inability to scale results in direct wallet share and opportunity loss",
-      "strategy":"Continuously optimize processes and technology to scale to the number of clients the ICG business brings in"
-   },
-   {
-      "code":"s2",
-      "shortname":"digitization",
-      "name":"Digitization of client experience",
-      "comment":"The definition of “digital” includes using on-line interfaces (web, mobile), end-to-end STP of the flows, timely responses and real time status updates",
-      "problem":"Currently, clients of ICG mostly use off-line methods to interact with Citi.  This leads to client choosing more advanced banks and non-banks, frequent Client escalations over delays and data loss leading to one-off emergency work and Citi’s inability to service requests in time",
-      "impact":"ICG’s inability to service client requests digitally results both in direct wallet share and opportunity loss",
-      "strategy":"Digitize business flows end-to-end"
-   },
-   {
-      "code":"s3",
-      "shortname":"efficiency",
-      "name":"Economies of scale",
-      "comment":"",
-      "problem":"ICG diverts significant resources globally to maintenance of a number of redundant systems and processes, which negatively affects Citi’s ability to scale to the business growth volumes in a cost-effective way",
-      "impact":"ICG’s inability to conduct business in a cost-effective way directly results in poorly placed investments and indirectly results in wallet share and opportunity loss",
-      "strategy":"Replace cost-ineffective processes and technology with strategic cost-effective platforms to achieve economies of scale"
-   },
-   {
-      "code":"s4",
-      "shortname":"revenue",
-      "name":"Revenue generation",
-      "comment":"",
-      "problem":"ICG business is not always able to discover and/or act upon business opportunities lacking access to fitting technology solutions",
-      "impact":"ICG’s inability to service client requests digitally results both in direct wallet share and opportunity loss",
-      "strategy":"Closely work with the business to continiously identify and address technology gaps"
-   },
-   {
-      "code":"s5",
-      "shortname":"regulatory",
-      "name":"Regulatory",
-      "comment":"",
-      "problem":"Auditors and regulatory agencies often find ICG at breach of compliance rules, resulting in the bank having to make significant investments into non-revenue generating work",
-      "impact":"Regulatory penalties ranging from monetary fines to business closure",
-      "strategy":"Stay ahead of regulatory challenges by creating solutions with regulatory requirements addressed at the design phase"
-   },
-   {
-      "code":"s6",
-      "shortname":"Enablers",
-      "name":"Enablers",
-      "comment":"",
-      "problem":"The technology teams ignore the strategic blockers/inhibitors around various aspects of the delivery process. This results in rework, delays, creating cost-ineffective solutions and, in general, not meeting strategic goals",
-      "impact":"Indirectly, this leads to both in direct wallet share and opportunity loss",
-      "strategy":"Invest into work that will enable the technology groups to meet their objectives"
-   }
-]
+{"code":"s1", "shortname":"scalability", "name":"Scaling to the number of clients", "comment":"some comment", "problem":"Many of the processes required to support a Client are too costly – usually because of the manual labor costs – to support the current number of clients, let alone increasing it. For example, the Investor Sales unit has decided to stop doing business with low-revenue clients because the cost of maintaining those clients is greater than the generated revenue. Similarly, credit lines are cut and legal agreements cancelled", "impact":"ICG’s inability to scale results in direct wallet share and opportunity loss", "strategy":"Continuously optimize processes and technology to scale to the number of clients the ICG business brings in"}
+{"code":"s2", "shortname":"digitization", "name":"Digitization of client experience", "comment":"The definition of “digital” includes using on-line interfaces (web, mobile), end-to-end STP of the flows, timely responses and real time status updates", "problem":"Currently, clients of ICG mostly use off-line methods to interact with Citi.  This leads to client choosing more advanced banks and non-banks, frequent Client escalations over delays and data loss leading to one-off emergency work and Citi’s inability to service requests in time", "impact":"ICG’s inability to service client requests digitally results both in direct wallet share and opportunity loss", "strategy":"Digitize business flows end-to-end"}
+{"code":"s3", "shortname":"efficiency", "name":"Economies of scale", "comment":"", "problem":"ICG diverts significant resources globally to maintenance of a number of redundant systems and processes, which negatively affects Citi’s ability to scale to the business growth volumes in a cost-effective way", "impact":"ICG’s inability to conduct business in a cost-effective way directly results in poorly placed investments and indirectly results in wallet share and opportunity loss", "strategy":"Replace cost-ineffective processes and technology with strategic cost-effective platforms to achieve economies of scale"}
+{"code":"s4", "shortname":"revenue", "name":"Revenue generation", "comment":"", "problem":"ICG business is not always able to discover and/or act upon business opportunities lacking access to fitting technology solutions", "impact":"ICG’s inability to service client requests digitally results both in direct wallet share and opportunity loss", "strategy":"Closely work with the business to continiously identify and address technology gaps"}
+{"code":"s5", "shortname":"regulatory", "name":"Regulatory", "comment":"", "problem":"Auditors and regulatory agencies often find ICG at breach of compliance rules, resulting in the bank having to make significant investments into non-revenue generating work", "impact":"Regulatory penalties ranging from monetary fines to business closure", "strategy":"Stay ahead of regulatory challenges by creating solutions with regulatory requirements addressed at the design phase"}
+{"code":"s6", "shortname":"Enablers", "name":"Enablers", "comment":"", "problem":"The technology teams ignore the strategic blockers/inhibitors around various aspects of the delivery process. This results in rework, delays, creating cost-ineffective solutions and, in general, not meeting strategic goals", "impact":"Indirectly, this leads to both in direct wallet share and opportunity loss", "strategy":"Invest into work that will enable the technology groups to meet their objectives"}
