@@ -1,6 +1,7 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 var mongoose = require("mongoose");
+var collectionName = "strategy";
 var Schema = mongoose.Schema;
 var strategySchema = new Schema({
     code: String,
@@ -10,5 +11,5 @@ var strategySchema = new Schema({
     problem: String,
     shortname: String,
     strategy: String
-});
-exports.strategyModel = mongoose.model('strategy', strategySchema);
+}, { collection: collectionName });
+exports.strategyModel = mongoose.model(collectionName, strategySchema);
