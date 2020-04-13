@@ -3,8 +3,12 @@ Object.defineProperty(exports, "__esModule", { value: true });
 var mongoose = require("mongoose");
 var Schema = mongoose.Schema;
 var strategySchema = new Schema({
-    id: Number,
+    code: String,
+    comment: String,
+    impact: String,
     name: String,
-    description: String
+    problem: String,
+    shortname: String,
+    strategy: String
 });
-var strategyModel = mongoose.model('Strategy', strategySchema);
+exports.strategyModel = mongoose.model('strategy', strategySchema);

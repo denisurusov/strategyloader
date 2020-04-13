@@ -1,11 +1,16 @@
 import * as mongoose from 'mongoose';
+
 let Schema = mongoose.Schema;
 
 let strategySchema = new Schema(
     {
-        id:Number,
-        name:String,
-        description:String
+            code: String,
+            comment: String,
+            impact: String,
+            name: String,
+            problem: String,
+            shortname: String,
+            strategy: String
     }
 );
-let strategyModel = mongoose.model('Strategy', strategySchema);
+export let strategyModel = mongoose.model('strategy', strategySchema);
