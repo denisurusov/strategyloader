@@ -4,10 +4,11 @@ import {strategyModel} from "../schema/strategySchema";
 mongoose.connection.on("connected", async () => {
     console.log("Database has connected successfully");
 
-    const cursor = strategyModel.find().cursor();
-    for (let doc = await cursor.next(); doc != null; doc = await cursor.next()) {
-        console.log(doc);
-    }
+    strategyModel.find().cursor().eachAsync(strategy => {
+        console.log(strategy);
+    }).then(() => {
+        console.log("done")
+    });
 });
 
 export function load() {

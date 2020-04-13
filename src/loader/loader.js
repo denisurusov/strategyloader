@@ -39,26 +39,12 @@ Object.defineProperty(exports, "__esModule", { value: true });
 var mongoose = require("mongoose");
 var strategySchema_1 = require("../schema/strategySchema");
 mongoose.connection.on("connected", function () { return __awaiter(void 0, void 0, void 0, function () {
-    var cursor, doc;
     return __generator(this, function (_a) {
-        switch (_a.label) {
-            case 0:
-                console.log("Database has connected successfully");
-                cursor = strategySchema_1.strategyModel.find().cursor();
-                return [4 /*yield*/, cursor.next()];
-            case 1:
-                doc = _a.sent();
-                _a.label = 2;
-            case 2:
-                if (!(doc != null)) return [3 /*break*/, 5];
-                console.log(doc);
-                _a.label = 3;
-            case 3: return [4 /*yield*/, cursor.next()];
-            case 4:
-                doc = _a.sent();
-                return [3 /*break*/, 2];
-            case 5: return [2 /*return*/];
-        }
+        console.log("Database has connected successfully");
+        strategySchema_1.strategyModel.find().cursor().eachAsync(function (strategy) {
+            console.log(strategy);
+        }).then(function () { console.log("done"); });
+        return [2 /*return*/];
     });
 }); });
 function load() {
