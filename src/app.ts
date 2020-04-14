@@ -1,3 +1,5 @@
 import * as loader from "./loader/loader";
+import * as middleware from "./loader/middleware";
 
-loader.load();
+middleware.connect();
+loader.returnStrategies();
