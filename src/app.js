@@ -12,8 +12,7 @@ var port = 3000;
 app.listen(port, function () { return console.log("API server started"); });
 //@http://localhost:3000/strategy call
 app.get('/strategy', function (req, res) {
-    var promise = strategySchema_1.loadStrategies();
-    promise.then(function (result) {
+    strategySchema_1.loadStrategies().then(function (result) {
         res.json(result);
     }).catch(function (err) {
         res.req.send(err);

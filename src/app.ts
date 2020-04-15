@@ -14,8 +14,7 @@ app.listen(port, () => console.log("API server started"));
 
 //@http://localhost:3000/strategy call
 app.get('/strategy', function (req, res) {
-    let promise = loadStrategies();
-    promise.then(result => {
+    loadStrategies().then(result => {
         res.json(result)
     }).catch(err => {
         res.req.send(err)
