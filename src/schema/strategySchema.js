@@ -12,3 +12,7 @@ var strategySchema = new mongoose.Schema({
     strategy: String
 }, { collection: collectionName });
 exports.strategyModel = mongoose.model(collectionName, strategySchema);
+function loadStrategies() {
+    return exports.strategyModel.find({}).find().exec();
+}
+exports.loadStrategies = loadStrategies;

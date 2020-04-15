@@ -1,5 +1,6 @@
 import * as middleware from "./loader/middleware";
-import {strategyModel} from "./schema/strategySchema";
+import {loadStrategies} from "./schema/strategySchema";
+//
 import * as express from 'express';
 
 //connect to mongo
@@ -10,12 +11,13 @@ const app = express();
 const port = 3000;
 app.listen(port, () => console.log("API server started"));
 
+
 //@http://localhost:3000/strategy call
 app.get('/strategy', function (req, res) {
-    strategyModel.find({}, function (err, result) {
-        if (err)
-            res.send(err);
-        else res.json(result);
-    })
+    let promise = loadStrategies();
+    promise.then(result => {
+        res.json(result)
+    }).catch(err => {
+        res.req.send(err)
+    });
 })
-

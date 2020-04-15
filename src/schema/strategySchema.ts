@@ -14,3 +14,7 @@ let strategySchema = new mongoose.Schema(
     }, {collection: collectionName}
 );
 export let strategyModel = mongoose.model(collectionName, strategySchema);
+
+export function loadStrategies(): Promise<any> {
+    return strategyModel.find({}).find().exec();
+}
