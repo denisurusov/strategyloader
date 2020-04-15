@@ -2,9 +2,7 @@ import * as mongoose from 'mongoose';
 
 const collectionName = "strategy";
 
-let Schema = mongoose.Schema;
-
-let strategySchema = new Schema(
+let strategySchema = new mongoose.Schema(
     {
         code: String,
         comment: String,

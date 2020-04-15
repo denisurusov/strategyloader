@@ -2,8 +2,7 @@
 Object.defineProperty(exports, "__esModule", { value: true });
 var mongoose = require("mongoose");
 var collectionName = "strategy";
-var Schema = mongoose.Schema;
-var strategySchema = new Schema({
+var strategySchema = new mongoose.Schema({
     code: String,
     comment: String,
     impact: String,
