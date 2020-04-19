@@ -1,0 +1,192 @@
+[
+  {
+    "strategyCode": "s6",
+    "capabilities": [
+      {
+        "name": "Client base management",
+        "capability": "understand and proactively manage client base",
+        "tracks": [
+          {
+            "name": "demarketing"
+          },
+          {
+            "name": "decretiting"
+          },
+          {
+            "name": "client profile"
+          }
+        ]
+      },
+      {
+        "name": "Value measurement",
+        "capability": "measure application value via feature usage",
+        "tracks": [
+          {
+            "name": "application coverage"
+          },
+          {
+            "name": "lake"
+          },
+          {
+            "name": "reporting"
+          }
+        ]
+      },
+      {
+        "name": "OKR",
+        "capability": "manage organizational alignment with value delivery using OKR framework",
+        "tracks": [
+          {
+            "name": "Team and product support"
+          },
+          {
+            "name": "Tooling"
+          }
+        ]
+      },
+      {
+        "name": "Delivery",
+        "capability": "automate value delivery process",
+        "tracks": [
+          {
+            "name": "Ability to evidence delivery"
+          }
+        ]
+      },
+      {
+        "name": "Business development",
+        "capability": "create and execute product development strategy",
+        "tracks": [
+          {
+            "name": "PR strategy and tooling"
+          },
+          {
+            "name": "Product development strategy management - create, execute, monitor"
+          }
+        ]
+      },
+      {
+        "name": "MTP",
+        "capability": "measure and report manual touch counts",
+        "tracks": [
+          {
+            "name": "tooling"
+          },
+          {
+            "name": "analytics"
+          },
+          {
+            "name": "application coverage"
+          }
+        ]
+      },
+      {
+        "name": "Digital document processing",
+        "capability": "run document through a processing pipeline automatically",
+        "tracks": [
+          {
+            "name": "tooling"
+          },
+          {
+            "name": "integrations"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "strategyCode": "s3",
+    "capabilities": [
+      {
+        "name": "Expansion & Digitization",
+        "capability": "achieve and sustain economises of scale mode",
+        "tracks": [
+          {
+            "name": "tooling (digitizer)"
+          },
+          {
+            "name": "application coverage"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "strategyCode": "s5",
+    "capabilities": [
+      {
+        "name": "Regulatory",
+        "capability": "stay compliant with regulations",
+        "tracks": [
+          {
+            "name": "Trade Data Services"
+          },
+          {
+            "name": "Data Quality"
+          },
+          {
+            "name": "Data Lineage"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "strategyCode": "s4",
+    "capabilities": [
+      {
+        "name": "Cross Product Deal Management",
+        "capability": "manage client product dealing with ICG holistically",
+        "tracks": [
+          {
+            "name": "Cross-product in-flight client status"
+          },
+          {
+            "name": "Ability to model client risks, strategies and goals"
+          }
+        ]
+      },
+      {
+        "name": "Core Client Strategies",
+        "capability": "to create, execute and measure efficiency of core client strategies",
+        "tracks": [
+          {
+            "name": "Profile fitting"
+          },
+          {
+            "name": "ECN migrations"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "strategyCode": "s1",
+    "capabilities": [
+      {
+        "name": "Credit line optimization",
+        "capability": "scale client credit risk management",
+        "tracks": [
+          {
+            "name": "credit review optimization"
+          },
+          {
+            "name": "credit workflow management"
+          },
+          {
+            "name": "proactive credit risk research and alerting"
+          }
+        ]
+      },
+      {
+        "name": "KYC refresh optimization",
+        "capability": "scale client AML compliance state management",
+        "tracks": [
+          {
+            "name": "AML platform build"
+          }
+        ]
+      }
+    ]
+  }
+]
