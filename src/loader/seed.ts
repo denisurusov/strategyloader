@@ -5,29 +5,25 @@ import {capabilityModel} from "../schema/capabilitySchema";
 import {strategyModel} from "../schema/strategySchema";
 //
 import * as middleware from "./middleware";
+import * as mongoose from 'mongoose';
 
+//clean collection then seed data from file
+function seed(collection: mongoose.Collection, jsonObject: Array<mongoose.Object>): void {
+    collection.deleteMany().then(() => {
+            for (let entry of jsonObject) {
+                new collection(entry).save(function (err, result) {
+                    if (err) console.log(err);
+                    else console.log(result);
+                })
+            }
+        }
+    );
+}
 
+//connect
 middleware.connect().then(() => {
     console.log("Connected to database");
 });
-
-//clean collecthen then load capabilities
-capabilityModel.deleteMany().then(() => {
-    for (let entry of capabilityFile.values()) {
-        new capabilityModel(entry).save(function (err, result) {
-            if (err) console.log(err);
-            else console.log(result);
-        })
-    }
-});
-
-//clean collecthen then load strategies
-strategyModel.deleteMany().then(() => {
-        for (let entry of strategyFile.values()) {
-            new strategyModel(entry).save(function (err, result) {
-                if (err) console.log(err);
-                else console.log(result);
-            })
-        }
-    }
-);
+//do some seeding
+seed(capabilityModel, capabilityFile);
+seed(strategyModel, strategyFile);

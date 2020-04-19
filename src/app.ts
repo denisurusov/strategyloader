@@ -14,9 +14,14 @@ const app = express();
 const port = 3000;
 app.listen(port, () => console.log("API server started"));
 
+/* TODO this could be done in a more elegant way with
+a) Express router to route API name to a middleware function and
+b) a middleware function that would fetch a collection with name mapped to API URL name
+ */
+
 
 //@http://localhost:3000/strategy call
-app.get('/strategy', (req: express.Request, res: express.Response) => {
+app.get("/strategy", (req: express.Request, res: express.Response) => {
     loadStrategies().then(result => {
         res.json(result)
     }).catch(err => {
@@ -34,5 +39,5 @@ app.get('/capability', (req: express.Request, res: express.Response) => {
 });
 
 app.get('/test', function (req: express.Request, res: express.Response) {
-    res.send("the app is alive");
+    res.send("Online.");
 });

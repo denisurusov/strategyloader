@@ -1,8 +1,8 @@
 "use strict";
-Object.defineProperty(exports, "__esModule", { value: true });
-const mongoose = require("mongoose");
-const collectionName = "strategy";
-let strategySchema = new mongoose.Schema({
+exports.__esModule = true;
+var mongoose = require("mongoose");
+var collectionName = "strategy";
+var strategySchema = new mongoose.Schema({
     strategyCode: String,
     comment: String,
     impact: String,
