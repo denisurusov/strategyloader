@@ -4,7 +4,7 @@ const collectionName = "strategy";
 
 let strategySchema = new mongoose.Schema(
     {
-        strategyCode: String,
+        code: String,
         comment: String,
         impact: String,
         name: String,

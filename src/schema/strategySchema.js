@@ -3,7 +3,7 @@ exports.__esModule = true;
 var mongoose = require("mongoose");
 var collectionName = "strategy";
 var strategySchema = new mongoose.Schema({
-    strategyCode: String,
+    code: String,
     comment: String,
     impact: String,
     name: String,

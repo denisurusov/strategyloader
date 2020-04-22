@@ -11,7 +11,7 @@ middleware.connect().then(() => {
 
 //initialize rest API server
 const app = express();
-const port = 3000;
+const port = 8080;
 app.listen(port, () => console.log("API server started"));
 
 /* TODO this could be done in a more elegant way with

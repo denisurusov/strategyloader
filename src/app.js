@@ -11,7 +11,7 @@ middleware.connect().then(function () {
 });
 //initialize rest API server
 var app = express();
-var port = 3000;
+var port = 8080;
 app.listen(port, function () { return console.log("API server started"); });
 /* TODO this could be done in a more elegant way with
 a) Express router to route API name to a middleware function and
