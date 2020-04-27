@@ -23,3 +23,7 @@ export let capabilityModel = mongoose.model(collectionName, capabilitySchema);
 export function loadCapabilities(): Promise<any> {
     return capabilityModel.find({}).find().exec();
 }
+
+export function getCapabilitiesForStrategy(strategyCode: string): Promise<any> {
+    return capabilityModel.findOne({strategyCode: strategyCode});
+}

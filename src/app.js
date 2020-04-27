@@ -14,8 +14,10 @@ var app = express();
 var port = 8080;
 app.listen(port, function () { return console.log("API server started"); });
 /* TODO this could be done in a more elegant way with
-a) Express router to route API name to a middleware function and
-b) a middleware function that would fetch a collection with name mapped to API URL name
+a) Express router to route API name to a middleware function...
+b) Common logging
+c) the worklets deserve their own router and/or module
+d) there has to be a sane way to create rest calls with http codes
  */
 //@http://localhost:3000/strategy call
 app.get("/strategy", function (req, res) {
@@ -35,4 +37,13 @@ app.get('/capability', function (req, res) {
 });
 app.get('/test', function (req, res) {
     res.send("Online.");
+});
+//@http://localhost:3000/capabilities call
+app.get('/capabilities', function (req, res) {
+    console.log("code=" + req.query.strategyCode);
+    capabilitySchema_1.getCapabilitiesForStrategy(req.query.strategyCode).then(function (result) {
+        result ? res.json(result) : res.send('empty');
+    })["catch"](function (err) {
+        res.req.send(err);
+    });
 });
