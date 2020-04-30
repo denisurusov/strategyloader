@@ -47,7 +47,6 @@ app.get('/test', function (req: express.Request, res: express.Response) {
 
 //@http://localhost:3000/capabilities call
 app.get('/capabilities', (req: express.Request, res: express.Response) => {
-    console.log("code=" + req.query.strategyCode);
     getCapabilitiesForStrategy(req.query.strategyCode).then(result => {
         result ? res.json(result) : res.send('empty');
     }).catch(err => {

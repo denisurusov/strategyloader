@@ -188,5 +188,37 @@
         ]
       }
     ]
+  },
+  {
+    "strategyCode": "s2",
+    "capabilities": [
+      {
+        "name": "Electronic signature",
+        "capability": "to electronically sign documents required for a given business process",
+        "tracks": [
+          {
+            "name": "EOVID portal"
+          },
+          {
+            "name": "Other vendors"
+          },
+          {
+            "name": "Document type support"
+          }
+        ]
+      },
+      {
+        "name": "Help desk",
+        "capability": "to communicate with ICG outside of a BAU communication flow",
+        "tracks": [
+          {
+            "name": "single facade"
+          },
+          {
+            "name": "backend data model"
+          }
+        ]
+      }
+    ]
   }
 ]

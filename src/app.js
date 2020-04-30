@@ -40,7 +40,6 @@ app.get('/test', function (req, res) {
 });
 //@http://localhost:3000/capabilities call
 app.get('/capabilities', function (req, res) {
-    console.log("code=" + req.query.strategyCode);
     capabilitySchema_1.getCapabilitiesForStrategy(req.query.strategyCode).then(function (result) {
         result ? res.json(result) : res.send('empty');
     })["catch"](function (err) {
