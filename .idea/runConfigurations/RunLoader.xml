@@ -1,0 +1,7 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="RunLoader" type="NodeJSConfigurationType" node-parameters="--require ts-node/register" path-to-js-file="app.ts" working-dir="$PROJECT_DIR$/src">
+    <method v="2">
+      <option name="MakeProject" enabled="true" />
+    </method>
+  </configuration>
+</component>
